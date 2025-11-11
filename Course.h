@@ -4,12 +4,22 @@
 #include <string>
 #include "Student.h"
 using namespace std;
-//#write your code here
+Course class:public Student{
+private:
+string courseCode;
+string courseName;
+int maxStudents;
+Student* students;
+int currentStudents;
+public:
+Couese();
+Course(string courseCode, string courseName, int maxStudents, Student &students);
+~Course();
+string addStudent(const Student& s);
+void displayCourseInfo();
 
 
-
-
-
+}
 
 
 
